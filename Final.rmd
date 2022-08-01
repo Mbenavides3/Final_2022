@@ -60,11 +60,12 @@ The frequency plot above demonstrates that almost an equal amount of the male sa
 ### Numerical Results
 
 ```{r}
-table1 <- xtabs(~infected + treatment, data=male)
+table1 <- xtabs(~infected + treatment, data=MaleData)
 rowPerc(table1)
 colPerc(table1)
 ```
 
+These numerical results show specific percentages of men that got covid-19 after taking the placebo and taking the vaccine. Among the guys, 32.22% got covid-19 after taking the vaccine, while the approximately 67.78% of guys that were given the placebo contracted covid-19. This data shows that the vaccine seems to be working significantly better than the placebo. 
 
 ### Inferential Results
 
