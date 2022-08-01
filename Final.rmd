@@ -133,6 +133,14 @@ These numerical results show specific percentages of women that got covid-19 aft
 
 ### Inferential Results
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+FemaleData <- fisher.test(table1)
+FemaleData
+```
+
+These results is the output of the Fisher’s Exact test. The p-value displayed above is extremely small at 9e-04. This is an awfully small number. seeing this number means that these results are not likely to occur by chance. The null hypothesis predicted that the deaths related to covid-19 are independent of sex. Since it is clear that sex does play a role in the death rate of individuals, the alternative hypothesis, that there is a correlation between covid-19 deaths and sex, is the favorable option. The odd ratio above illustrates a ratio of 1.4. The women who received the vaccine were two times more likely to get covid-19 than those who received the placebo.
 
 ## LGBTQ
 
