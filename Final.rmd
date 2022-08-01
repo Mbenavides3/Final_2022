@@ -1,12 +1,13 @@
 ---
 title: "Covid91 vaccine study Final2022"
-author: "Put your name here!"
+author: "Michelle Benavides"
+date: "August 1, 2022"
 output: 
   html_document:
     number_sections: true
     toc: true
     toc_depth: 5
-date: "`r Sys.Date()`" 
+ 
 ---
 
 ```{r include=FALSE,echo=FALSE}
