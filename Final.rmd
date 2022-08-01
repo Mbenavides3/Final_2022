@@ -69,6 +69,28 @@ These numerical results show specific percentages of men that got covid-19 after
 
 ### Inferential Results
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+MaleFisher <- fisher.test(table1)
+MaleFisher
+```
+
+These results is the output of the Fisher’s Exact test. The p-value displayed above is extremely small at 2.645e-11. This is an awfully small number. seeing this number means that these results are not likely to occur by chance. The null hypothesis predicted that the deaths related to covid-19 are independent of sex. Since it is clear that sex does play a role in the death rate of individuals, the alternative hypothesis, that there is a correlation between covid-19 deaths and sex, is the favorable option. The odd ratio above illustrates a ratio of 2.09. The men who received tha vaccine were two times more likely to get covid-19 than those who received the placebo.
+
+### Effectiveness Confidence Interval
+
+```{r}
+effect <- MaleFisher$p.value/(MaleFisher$p.value +1)
+MaleEffectiveness = MaleFisher$estimate/(MaleFisher$estimate +1)*100
+print(MaleEffectiveness)
+
+low=(MaleFisher$conf.int[1]/(MaleFisher$conf.int[1] +1))*100
+hi=(MaleFisher$conf.int[2]/(MaleFisher$conf.int[2] +1))*100
+options(digits=2)
+```
+
+
 
 ## Females
 
