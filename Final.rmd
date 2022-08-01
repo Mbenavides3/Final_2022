@@ -25,6 +25,10 @@ mutate(across(where(is.character), as.factor))
 
 A new  preventative vaccine (covid91) is under test in clinical trials. Given the nature of this vaccine it is suspected that the drug may exhibit different effectiveness across the variety of subpopulations tracked. Consider population subgroups by gender( guys and gals), drug use, and sexual orientation. Write a complete report that separately considers this drug for each subgroup and your recommendations as to whether people in the subgroup should take the vaccine. Structure your report in four sections each devoted to one of the four subgroups, use null and alternative hypothesis statements and correct statistical verbage when referencing p-values in conclusions.
 
+## R Code Details
+
+First, the variables from FinalData needed to be changed from character variables into factor variables. the appropriate dplyr code was used to do this. Next, specific subgroups had to be separated from the broader categories in order to properly studied. Gal and guy were separated into subgroups, as well as gay sexual orientation and people that answered yes to participating in drug use. All of these categories are isolated to see weather or not these particular populations should or should not take the new covid-19 vaccine. In order to create the effectiveness interval for all four categories, each group of people in this study had to be stored in separate variables.
+
 ## Males
 
 
