@@ -31,13 +31,37 @@ First, the variables from FinalData needed to be changed from character variable
 
 ## Males
 
+### Graphical Results
+
+### Numerical Results
+
+### Inferential Results
+
 
 ## Females
+
+### Graphical Results
+
+### Numerical Results
+
+### Inferential Results
 
 
 ## LGBTQ
 
+### Graphical Results
+
+### Numerical Results
+
+### Inferential Results
 
 
 ## Druggies
 
+### Graphical Results
+
+### Numerical Results
+
+### Inferential Results
+
+## Discussion and Conclusion
