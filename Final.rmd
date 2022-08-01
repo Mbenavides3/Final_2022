@@ -31,7 +31,30 @@ First, the variables from FinalData needed to be changed from character variable
 
 ## Males
 
+```{r}
+MaleData<-filter(FinalData, sex == "M")
+MaleData<-select(MaleData, -sex)
+```
+
 ### Graphical Results
+
+```{r}
+dd2 <- MaleData %>% group_by(infected,treatment) %>% summarize(count=n()) %>% mutate(prcnt=count/sum(count))
+
+## `summarise()` has grouped output by 'infected'. You can override using the `.groups` argument.
+
+# the group_by followed by summarize(count=n())
+
+basicC <- ggplot(dd2,aes(x=infected,y=count,fill=treatment))
+basicC + geom_bar(stat="identity",position="dodge")
+
+#Now for percentage plot
+
+basicCC <- ggplot(dd2,aes(x=infected,y=prcnt*100,fill=treatment)) 
+basicCC + geom_bar(stat="identity", position = "dodge")
+```
+
+
 
 ### Numerical Results
 
