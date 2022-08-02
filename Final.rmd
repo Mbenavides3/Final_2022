@@ -186,6 +186,12 @@ The frequency plot above demonstrates that almost an equal amount of the LGBTQ i
 
 ### Numerical Results
 
+```{r}
+table1 <- xtabs(~infected + treatment, data=LGBTQData)
+rowPerc(table1)
+colPerc(table1)
+```
+
 ### Inferential Results
 
 
