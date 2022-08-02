@@ -244,6 +244,9 @@ basicCC <- ggplot(dd2,aes(x=infected,y=prcnt*100,fill=treatment))
 basicCC + geom_bar(stat="identity", position = "dodge")
 ```
 
+This plot represents the population of drug users and the relationship to the contraction of covid-19 by either taking the vaccine or the placebo. The codes that create this plot start with the code block beginning with dd2. dd2 can be seen in the environment pane and if inspected contains 4 variables.These variables include infected, treatment, count, and prcent(stands for percent). The second group of codes is called the basicC. BasicC can also be seen in the environment pane and appears to contain a list of 9 variables. This information creates the first plot. The basicCC is the last bunch of codes and is also in the files pane. It also contains 9 variables and helps to create the percentage plot, the second plot.  
+The frequency plot above demonstrates that almost an equal amount of the drug users in the sample took either the vaccine or the placebo. The fact that the sample had almost an equal amount of placebos or vaccine makes the study reliable and well-grounded. While the percentage plot demonstrates that about 85% of the people that took the vaccine did in fact get covid-19, while almost 15% of the people taking the placebo contracted covid-19. A substantially lower percentage of people who took the vaccine contracted covid-19 versus those who were only given the placebo.
+
 ### Numerical Results
 
 ### Inferential Results
