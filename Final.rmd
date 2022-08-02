@@ -1,5 +1,5 @@
 ---
-title: "Covid91 vaccine study Final2022"
+title: "Covid19 vaccine study Final2022"
 author: "Michelle Benavides"
 date: "August 1, 2022"
 output: 
