@@ -259,4 +259,11 @@ These numerical results show specific percentages of drug users that got covid-1
 
 ### Inferential Results
 
+```{r}
+chisq.test(table1)
+chisqtestGC(table1)
+DruggiesFisher <- fisher.test(table1)
+DruggiesFisher
+```
+
 ## Discussion and Conclusion
