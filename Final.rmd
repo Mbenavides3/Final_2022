@@ -249,6 +249,14 @@ The frequency plot above demonstrates that almost an equal amount of the drug us
 
 ### Numerical Results
 
+```{r}
+table1 <- xtabs(~infected + treatment, data=DruggiesData)
+rowPerc(table1)
+colPerc(table1)
+```
+
+These numerical results show specific percentages of drug users that got covid-19 after taking the placebo and taking the vaccine. Among the drug users, 85% got covid-19 after taking the vaccine, while only 15% of drug users that were given the placebo contracted covid-19. This data shows that the vaccine seems to be working significantly worse than the placebo. 
+
 ### Inferential Results
 
 ## Discussion and Conclusion
