@@ -129,7 +129,7 @@ rowPerc(table1)
 colPerc(table1)
 ```
 
-These numerical results show specific percentages of women that got covid-19 after taking the placebo and taking the vaccine. Among the women, 41% got covid-19 after taking the vaccine, while the approximately 59% of guys that were given the placebo contracted covid-19. This data shows that the vaccine seems to be working significantly better than the placebo. 
+These numerical results show specific percentages of women that got covid-19 after taking the placebo and taking the vaccine. Among the women, 41% got covid-19 after taking the vaccine, while the approximately 59% of women that were given the placebo contracted covid-19. This data shows that the vaccine seems to be working significantly better than the placebo. 
 
 ### Inferential Results
 
@@ -191,6 +191,8 @@ table1 <- xtabs(~infected + treatment, data=LGBTQData)
 rowPerc(table1)
 colPerc(table1)
 ```
+
+These numerical results show specific percentages of LGBTQ people that got covid-19 after taking the placebo and taking the vaccine. Among the LGBTQ people, 87% got covid-19 after taking the vaccine, while only 13% of LGBTQ people that were given the placebo contracted covid-19. This data shows that the vaccine seems to be working significantly worse than the placebo. 
 
 ### Inferential Results
 
