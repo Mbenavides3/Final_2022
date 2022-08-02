@@ -221,6 +221,11 @@ Above is the effectiveness for the covid-19 vaccine for females. If the effectiv
 
 ## Druggies
 
+```{r}
+DruggiesData<-filter(FinalData, DrugUser == "yes")
+DruggiesData<-select(DruggiesData, -DrugUser)
+```
+
 ### Graphical Results
 
 ### Numerical Results
