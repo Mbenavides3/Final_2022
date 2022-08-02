@@ -266,4 +266,6 @@ DruggiesFisher <- fisher.test(table1)
 DruggiesFisher
 ```
 
+These results is the output of the Fisher’s Exact test. The p-value displayed above is extremely small at 3e-08. This is an awfully small number. seeing this number means that these results are not likely to occur by chance. The null hypothesis predicted that the deaths related to covid-19 are independent of whether or not a person is a drug user. Since it is clear that whether or not a person is a drug user does play a role in the death rate of individuals, the alternative hypothesis, that there is a correlation between covid-19 deaths and whether or not a person is a drug user, is the favorable option. The odd ratio above illustrates a ratio of 0.18.
+
 ## Discussion and Conclusion
