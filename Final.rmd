@@ -140,7 +140,7 @@ FemaleFisher <- fisher.test(table1)
 FemaleFisher
 ```
 
-These results is the output of the Fisher’s Exact test. The p-value displayed above is extremely small at 2e-09. This is an awfully small number. seeing this number means that these results are not likely to occur by chance. The null hypothesis predicted that the deaths related to covid-19 are independent of sex. Since it is clear that sex does play a role in the death rate of individuals, the alternative hypothesis, that there is a correlation between covid-19 deaths and sex, is the favorable option. The odd ratio above illustrates a ratio of 0.15. The women who received the vaccine were two times more likely to get covid-19 than those who received the placebo.
+These results is the output of the Fisher’s Exact test. The p-value displayed above is extremely small at 9e-04. This is an awfully small number. seeing this number means that these results are not likely to occur by chance. The null hypothesis predicted that the deaths related to covid-19 are independent of sex. Since it is clear that sex does play a role in the death rate of individuals, the alternative hypothesis, that there is a correlation between covid-19 deaths and sex, is the favorable option. The odd ratio above illustrates a ratio of 1.4. The women who received the vaccine were two times more likely to get covid-19 than those who received the placebo.
 
 ### Effectiveness Confidence Interval
 
@@ -154,7 +154,7 @@ hi=(FemaleFisher$conf.int[2]/(FemaleFisher$conf.int[2] +1))*100
 options(digits=2)
 ```
 
-Above is the effectiveness for the covid-19 vaccine for females. If the effectiveness is above 50% that means that the vaccine is effective. Based on the interval seen above, we can conclude that the vaccine is effective in protecting men from getting covid-19.The odds ratio is 13. The confidence interval more the male sample is 5.65 to 23.78.
+Above is the effectiveness for the covid-19 vaccine for females. If the effectiveness is above 50% that means that the vaccine is effective. Based on the interval seen above, we can conclude that the vaccine is effective in protecting men from getting covid-19.The odds ratio is 59. The confidence interval more the male sample is 53.50 to 64.01.
 
 ## LGBTQ+
 
@@ -202,6 +202,8 @@ chisqtestGC(table1)
 LGBTQFisher <- fisher.test(table1)
 LGBTQFisher
 ```
+
+These results is the output of the Fisher’s Exact test. The p-value displayed above is extremely small at 2e-09. This is an awfully small number. seeing this number means that these results are not likely to occur by chance. The null hypothesis predicted that the deaths related to covid-19 are independent of sexual orientation. Since it is clear that sexual orientation does play a role in the death rate of individuals, the alternative hypothesis, that there is a correlation between covid-19 deaths and sexual orientation, is the favorable option. The odd ratio above illustrates a ratio of 0.15.
 
 ## Druggies
 
